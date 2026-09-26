@@ -2,6 +2,7 @@ import java.util.*;
 
 /**
  * CampusGraph.java
+ * Author: Jawahidu Fathima Rifna - 23da-0842
  * MEMBER 4 RESPONSIBILITY: Graph implementation, campus locations,
  * connections, and BFS/DFS traversal.
  *
@@ -13,12 +14,7 @@ import java.util.*;
  *  - Supports both BFS and DFS traversal.
  *
  * The graph is undirected (a road connects both ways) and unweighted.
- */ 
-/**
-*	Author:	Jawahidu Fathima Rifna	- 23da-0842
-*	Member	4	Responsibility:	Graph	implementation,	campus	locations,
-*	connections,	and	BFS/DFS	traversal. ...*/
-
+ */
 public class CampusGraph {
 
     // adjacency list: location name -> set of directly connected locations
@@ -145,6 +141,6 @@ public class CampusGraph {
     }
 
     public Set<String> getAllLocations() {
-        return Collections.unmodifiableSet(new LinkedHashSet<>(adjList.keySet()));
+        return adjList.keySet();
     }
 }
